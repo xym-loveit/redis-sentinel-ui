@@ -20,5 +20,6 @@
 ![需要修改jade](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/jade.png)  
 
 5、修改 主目录/views目录下所有jade后缀的文件，改为pug后缀，修改结果见下图：  
-![将后缀更改为pug](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/pug.png) 
+![将后缀更改为pug](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/pug.png)   
 
+6、前五步骤完成，执行npm install。

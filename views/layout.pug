@@ -1,0 +1,29 @@
+//-
+   @file: layout
+   @author: youngsterxyf, gejiawen
+   @date: 15/12/5 19:14
+   @description: layout
+
+- var date = new Date()
+- title = 'Redis Sentinel Manager'
+
+doctype html
+
+html
+    head
+        meta(charset='utf-8')
+        title #{title}
+        meta(name="viewport", content="width=1000, initial-scale=1.0, maximum-scale=1.0")
+        link(rel='shortcut icon', href='/public/favicon.png')
+        link(rel='stylesheet', href='/public/vendor/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/public/vendor/bootstrap/css/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='/public/vendor/bootstrap-datetimepicker.min.css')
+        link(rel='stylesheet', href='/public/main.css')
+        block head_css
+        block head_js
+    body
+        div(class="container")
+          include header
+          block content
+          include footer
+        script(src='/public/dist/main.js')

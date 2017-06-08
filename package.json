@@ -1,0 +1,36 @@
+{
+  "name": "redis-sentinel-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "youngsterxyf",
+  "contributors": [
+    "gejiawen <806717031@qq.com>"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "cn-bootstrap-datetimepicker": "^4.15.36",
+    "co-body": "^4.0.0",
+    "debug": "^2.2.0",
+    "highcharts": "^4.2.0",
+    "ioredis": "^1.11.1",
+    "jquery": ">=1.8.3 <2.2.0",
+    "log": "^1.4.0",
+    "mime-types": "^2.1.8",
+    "pug": "2.0.0-rc.2",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1"
+  },
+  "engines": {
+    "node": ">=5.1.0"
+  }
+}

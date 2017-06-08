@@ -12,7 +12,7 @@
 	只需要使用–registry参数指定镜像服务器地址，为了避免每次安装都需要--registry参数，可以使用如下命令进行永久设置：
 	npm config set registry http://registry.npm.taobao.org
 
-3、修改package.json依赖清单，修改内容如下：  
+3、修改`package.json`依赖清单，修改内容如下：  
 
 	"jade": "^1.11.0", 改为 "pug": "2.0.0-rc.2",
 
@@ -22,6 +22,14 @@
 5、修改 主目录/views目录下所有jade后缀的文件，改为pug后缀，修改结果见下图：  
 ![将后缀更改为pug](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/pug.png)   
 
-6、修改 主目录下的config.js中的哨兵（sentinel）配置项。
+6、前五步骤完成，cd 到`redis-sentinel-ui主目录`执行`npm install`。  
 
-7、以上步骤完成，执行npm install。
+7、其他步骤请按照readme介绍即可。  
+
+8、其中一下两步可以这样配置：  
+
+	nohup  node god.js >>god.log 2>&1 &
+	nohup  node app.js >>god.log 2>&1 &
+
+
+说明：监控本人初略的看了下，是开启子进程（监控进程）定时捞取自哨兵（sentinel）的redis info信息数据，然后暂存sqllite数据库中，从这里也看出来nodejs的强大。

@@ -17,8 +17,8 @@
 	"jade": "^1.11.0", 改为 "pug": "2.0.0-rc.2",
 
 4、修改一切与jade模块相关的文件，修改内容如下图：  
-![]()  
+![需要修改jade](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/jade.png)  
 
 5、修改 主目录/views目录下所有jade后缀的文件，改为pug后缀，修改结果见下图：  
-![]() 
+![将后缀更改为pug](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/pug.png) 
 

@@ -22,4 +22,6 @@
 5、修改 主目录/views目录下所有jade后缀的文件，改为pug后缀，修改结果见下图：  
 ![将后缀更改为pug](https://raw.github.com/xym-loveit/redis-sentinel-ui/master/screenshot/pug.png)   
 
-6、前五步骤完成，执行npm install。
+6、修改 主目录下的config.js中的哨兵（sentinel）配置项。
+
+7、以上步骤完成，执行npm install。

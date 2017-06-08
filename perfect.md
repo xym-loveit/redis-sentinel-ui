@@ -31,5 +31,6 @@
 	nohup  node god.js >>god.log 2>&1 &
 	nohup  node app.js >>god.log 2>&1 &
 
-
+9、针对有些特殊依赖需要使用独立安装（使用root管理员权限，为了简洁centos 直接采用npm install 安装即可，如gulp的安装）。
+	
 说明：监控本人初略的看了下，是开启子进程（监控进程）定时捞取自哨兵（sentinel）的redis info信息数据，然后暂存sqllite数据库中，从这里也看出来nodejs的强大。
